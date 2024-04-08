@@ -25,12 +25,11 @@ public class Circunferencia {
         String color = "rojo";
         System.out.println("Di�metro: " + 2 * getRad());
         System.out.println("Color: " + color);
-        double area1 = 2 * PI * getRad() * getRad();
+        double area1 = 2 * 3.1416 * getRad() * getRad();
         double area = area1;
         System.out.println(area);
     }
 
-    private static final double PI = 3.1416;
 
     public boolean esIgual(boolean considerarDecimales, Circunferencia otro) {
         double radio1 = this.getRad();
