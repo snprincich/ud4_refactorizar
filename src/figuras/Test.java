@@ -1,7 +1,5 @@
 package figuras;
 
-import utilidades.Circulo;
-
 public class Test {
     public static void main(String[] args)
 {
