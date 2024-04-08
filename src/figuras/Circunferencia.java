@@ -5,33 +5,34 @@ public class Circunferencia {
     /**
      * @return the rad
      */
-    public double getRadio() {
-        return radio;
+    public double getRad() {
+        return rad;
     }
 
     /**
-     * @param radio the rad to set
+     * @param rad the rad to set
      */
-    public void setRadio(double radio) {
-        this.radio = radio;
+    public void setRad(double rad) {
+        this.rad = rad;
     }
-    private double radio;
+    private double rad;
 
     public Circunferencia(double radio) {
-        this.radio = radio;
+        this.rad = radio;
     }
 
     public void imprimir() {
         String color = "rojo";
-        System.out.println("Di�metro: " + 2 * getRadio());
+        double d = 2 * getRad();
+        System.out.println("Di�metro: " + d);
         System.out.println("Color: " + color);
-        double area = 2 * 3.1416 * getRadio() * getRadio();
+        double area = 2 * 3.1416 * getRad() * getRad();
         System.out.println(area);
     }
 
     public boolean esIgual(Circunferencia otro, boolean conDecimales) {
-        double radio1 = this.getRadio();
-        double radio2 = otro.getRadio();
+        double radio1 = this.getRad();
+        double radio2 = otro.getRad();
         if (conDecimales) {
             if (radio1 == radio2) {
                 return true;
